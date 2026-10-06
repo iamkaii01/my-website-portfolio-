@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jay Laurence Adim — AI Video Specialist</title>
+<meta name="description" content="I create performance-focused AI video ads for DTC and e-commerce brands, built to communicate offers clearly and support paid-social testing.">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jay Laurence Adim — AI Video Specialist">
+<meta property="og:description" content="I create performance-focused AI video ads for DTC and e-commerce brands, built to communicate offers clearly and support paid-social testing.">
+<meta property="og:image" content="images/og-image.jpg">
+<!-- UPDATE once you have a domain: use full https:// URLs for og:url and og:image -->
+<meta property="og:url" content="https://YOUR-DOMAIN-HERE/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<script>if('IntersectionObserver' in window)document.documentElement.classList.add('js')</script>
+<style>
+:root{--bg:#0D0F12;--s:#171A1F;--t:#F2F2EE;--m:#9A9EA6;--l:#2A2E35;--a:#7D8CFF}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--t);font:400 16px/1.65 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;line-height:1.02;letter-spacing:-.03em}
+ul,ol{list-style:none;padding:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--a);color:var(--bg);padding:10px 14px;z-index:20}
+.skip:focus{left:8px}
+.w{max-width:1240px;margin:0 auto;padding:0 20px}
+.lbl{font:700 11px/1.4 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--a)}
+.mut{color:var(--m)}
+h2{font-size:clamp(2.2rem,6vw,4.4rem);margin-bottom:40px}
+section{padding:72px 0}
+header{background:var(--bg);border-bottom:1px solid var(--l);z-index:10}
+.nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:0 20px;padding:10px 20px}
+.brand{font:700 16px 'Space Grotesk',sans-serif;text-decoration:none;letter-spacing:-.01em;padding:8px 0}
+.nav ul{display:flex;gap:18px}
+.nav ul a{display:inline-block;padding:11px 0;font-size:13px;color:var(--m);text-decoration:none;transition:color .2s}
+.nav ul a:hover,.nav ul a[aria-current]{color:var(--a)}
+.btn{display:inline-block;background:var(--a);color:var(--bg);font:700 13px 'Space Grotesk',sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:16px 28px;min-height:48px;border-radius:2px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+/* frames + placeholders */
+.frame{position:relative;aspect-ratio:9/16;background:linear-gradient(165deg,#1d2127,#12151a);border:1px solid var(--l);overflow:hidden}
+.frame::after{content:attr(data-file);position:absolute;left:10px;bottom:10px;font:500 10px/1.2 Manrope,sans-serif;letter-spacing:.06em;color:var(--m)}
+.frame.ok::after{display:none}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.frame:hover img{transform:scale(1.025)}
+/* hero */
+.hero{display:grid;gap:40px;padding:44px 20px 64px}
+.hero h1{font-size:clamp(2.7rem,10vw,6rem);margin:18px 0 22px}
+.hero p{color:var(--m);font-size:17px;max-width:40ch;margin-bottom:32px}
+.reel{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-items:start}
+.reel .frame:nth-child(2){margin-top:28px}
+.reel .frame:nth-child(3){margin-top:56px}
+/* strip */
+.strip{border-block:1px solid var(--l);padding:0}
+.strip ul{display:flex;flex-wrap:wrap;padding:16px 0}
+.strip li{font:700 12px 'Space Grotesk',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--m);padding:4px 0}
+.strip li+li::before{content:"";display:inline-block;width:4px;height:4px;background:var(--l);margin:0 14px;vertical-align:middle}
+/* work */
+.proj{display:grid;gap:32px;padding:56px 0;border-top:1px solid var(--l)}
+.proj .frame{width:100%;max-width:460px}
+.proj h3{font-size:clamp(2rem,5vw,3.4rem);margin:10px 0 28px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.row{display:grid;gap:4px;padding:16px 0;border-top:1px solid var(--l)}
+.row dt{font:700 11px/1.4 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--m)}
+.row dd{max-width:56ch}
+.play{position:absolute;inset:0;width:100%;border:0;cursor:pointer;background:linear-gradient(to top,rgba(13,15,18,.6),transparent 50%);color:var(--t);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font:700 12px 'Space Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.play i{width:64px;height:64px;border:1px solid var(--t);border-radius:50%;display:grid;place-items:center;transition:background .2s,border-color .2s}
+.play i::before{content:"";border-left:16px solid var(--t);border-block:10px solid transparent;margin-left:5px}
+.play:hover i{background:var(--a);border-color:var(--a)}
+.play:hover i::before{border-left-color:var(--bg)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+/* services */
+.svc{display:grid;gap:12px;padding:32px 0;border-top:1px solid var(--l)}
+.svc .n{font:700 13px 'Space Grotesk',sans-serif;color:var(--a)}
+.svc h3{font-size:clamp(1.5rem,3.2vw,2.3rem)}
+.svc p{max-width:52ch;margin-bottom:14px}
+.svc b{display:block;font:700 11px Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--m)}
+/* process */
+.alt{background:var(--s)}
+.steps{display:grid;gap:0}
+.steps li{border-top:1px solid var(--l);padding:24px 0}
+.steps .n{font:700 13px 'Space Grotesk',sans-serif;color:var(--a)}
+.steps h3{font-size:1.7rem;margin:10px 0}
+.steps p{color:var(--m)}
+/* standards */
+.std{display:grid}
+.std li{border-top:1px solid var(--l);padding:28px 0}
+.std h3{font-size:clamp(1.6rem,3.6vw,2.7rem);margin-bottom:12px}
+.std p{color:var(--m);max-width:44ch}
+/* about / contact */
+.about p{max-width:60ch;margin-bottom:18px;color:var(--m)}
+.about p:first-of-type{color:var(--t);font-size:1.25rem;line-height:1.5}
+.pf{width:140px;height:140px;object-fit:cover;display:block;margin-bottom:24px;border:1px solid var(--l)}
+.contact h2{max-width:14ch}
+.contact p{max-width:52ch;color:var(--m);margin-bottom:28px}
+.mail{display:block;margin-top:22px;font:700 clamp(1.1rem,4vw,1.6rem) 'Space Grotesk',sans-serif;word-break:break-all}
+.wa{display:inline-block;margin-top:14px;padding:10px 0;color:var(--m);font-size:14px}
+.links{display:flex;flex-wrap:wrap;gap:4px 22px;margin-top:28px;padding-top:20px;border-top:1px solid var(--l)}
+.links a,footer a{display:inline-block;padding:10px 0;font-size:14px;color:var(--m);text-underline-offset:4px;transition:color .2s}
+.links a:hover,footer a:hover,.wa:hover{color:var(--a)}
+footer{border-top:1px solid var(--l);padding:22px 0;font-size:13px;color:var(--m)}
+footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 24px}
+footer div{display:flex;flex-wrap:wrap;gap:0 20px}
+/* motion */
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .45s,transform .45s}
+.js .rv.in{opacity:1;transform:none}
+.js .frame.rv{opacity:1;transform:none;clip-path:inset(0 0 100% 0);transition:clip-path .6s cubic-bezier(.2,.7,.2,1)}
+.js .frame.rv.in{clip-path:inset(0)}
+@media(min-width:720px){
+ header{position:sticky;top:0}
+ .nav ul{gap:28px}
+ .row{grid-template-columns:150px 1fr;gap:20px}
+ .svc{grid-template-columns:60px 1fr 1.3fr;gap:28px}
+ .steps{grid-template-columns:repeat(4,1fr);gap:24px}
+ .std{grid-template-columns:1fr 1fr;column-gap:48px}
+ section{padding:104px 0}
+}
+@media(min-width:900px){
+ .hero{grid-template-columns:1fr 1.1fr;align-items:center;gap:64px;padding-top:72px}
+ .proj{grid-template-columns:minmax(300px,460px) 1fr;gap:80px;align-items:start}
+ .proj.rev{grid-template-columns:1fr minmax(300px,460px)}
+ .proj.rev .frame{order:2}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .js .rv,.js .frame.rv{opacity:1;transform:none;clip-path:none;transition:none}
+ .frame img,.btn{transition:none}
+ .frame:hover img,.btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+<header>
+ <nav class="nav w" aria-label="Main">
+  <a class="brand" href="#top">Jay Laurence Adim</a>
+  <ul>
+   <li><a href="#work">Work</a></li>
+   <li><a href="#services">Services</a></li>
+   <li><a href="#process">Process</a></li>
+   <li><a href="#about">About</a></li>
+   <li><a href="#contact">Contact</a></li>
+  </ul>
+ </nav>
+</header>
+<main id="top">
+ <div class="hero w">
+  <div class="rv">
+   <p class="lbl">AI Video Specialist</p>
+   <h1>AI Video Built for Ads, Not AI Demos</h1>
+   <p>I create realistic UGC, product creative, and direct-response video for DTC and e-commerce brands that need paid-social creative built with control.</p>
+   <a class="btn" href="mailto:jaylaurenceadim@gmail.com">Start a Project</a>
+  </div>
+  <div class="reel" aria-hidden="true">
+   <div class="frame rv" data-file="images/work-01.jpg"><img src="images/work-01.jpg" alt="" loading="lazy"></div>
+   <div class="frame rv" data-file="images/work-02.jpg"><img src="images/work-02.jpg" alt="" loading="lazy"></div>
+   <div class="frame rv" data-file="images/work-03.jpg"><img src="images/work-03.jpg" alt="" loading="lazy"></div>
+  </div>
+ </div>
+
+ <div class="strip" aria-label="Capabilities">
+  <ul class="w">
+   <li>AI UGC Ads</li><li>Product Video Ads</li><li>VSL Creative</li><li>AI Product B-Roll</li><li>3D-Style Visuals</li><li>Direct-Response Editing</li>
+  </ul>
+ </div>
+
+ <section id="work" aria-labelledby="h-work">
+  <div class="w">
+   <h2 id="h-work">Selected Work</h2>
+
+   <article class="proj">
+    <div class="frame rv" data-file="images/work-01.jpg"><img src="images/work-01.jpg" alt="NIVEA Men AI UGC ad concept, vertical campaign frame" loading="lazy"><button class="play" type="button" data-src="https://drive.google.com/file/d/1_U72RdDSaA8UcWVbkfuVjHPPw6KBeQ8D/preview" data-title="NIVEA Men AI UGC ad video"><i aria-hidden="true"></i>Play ad<span class="sr">: NIVEA Men AI UGC ad</span></button></div>
+    <div class="rv">
+     <p class="meta"><span class="lbl">01 / 03</span><span class="lbl">Self-Directed Brand Concept</span></p>
+     <h3>NIVEA Men — AI UGC Performance Ad</h3>
+     <dl>
+      <div class="row"><dt>Challenge</dt><dd>Create a believable men’s skincare ad that moves from an everyday oily-skin problem into clear product relevance without feeling like a polished traditional commercial.</dd></div>
+      <div class="row"><dt>Approach</dt><dd>I built the creative structure, storyboard, character direction, product integration, B-roll, and edit around natural UGC performance. Skin texture, gestures, framing, lighting, and product continuity were controlled throughout.</dd></div>
+      <div class="row"><dt>What It Demonstrates</dt><dd>Realistic AI UGC production, problem-to-solution storytelling, product continuity, and direct-response pacing.</dd></div>
+      <div class="row"><dt>Tools</dt><dd class="mut">ChatGPT · Nano Banana · Kling · Video Editing Tools</dd></div>
+     </dl>
+    </div>
+   </article>
+
+   <article class="proj rev">
+    <div class="frame rv" data-file="images/work-02.jpg"><img src="images/work-02.jpg" alt="Vaseline Lip Balm AI product ad concept, vertical campaign frame" loading="lazy"><button class="play" type="button" data-src="https://drive.google.com/file/d/1p75NuF6rbMt6buIYjhM6-7FsZkRi3Hvo/preview" data-title="Vaseline Lip Balm AI product ad video"><i aria-hidden="true"></i>Play ad<span class="sr">: Vaseline Lip Balm AI product ad</span></button></div>
+    <div class="rv">
+     <p class="meta"><span class="lbl">02 / 03</span><span class="lbl">Self-Directed Brand Concept</span></p>
+     <h3>Vaseline Lip Balm — AI Product / UGC Ad</h3>
+     <dl>
+      <div class="row"><dt>Challenge</dt><dd>Create believable product-use footage without product morphing, scale changes, hand-transfer errors, disappearing objects, changing packaging, or broken continuity.</dd></div>
+      <div class="row"><dt>Approach</dt><dd>I built controlled first-frame product states and matched image-to-video prompts across scenes. Product scale, packaging, hand placement, lighting, framing, and environment were treated as fixed production constraints instead of being reinterpreted shot by shot.</dd></div>
+      <div class="row"><dt>What It Demonstrates</dt><dd>Product-continuity control, believable product handling, and disciplined image-to-video production.</dd></div>
+      <div class="row"><dt>Tools</dt><dd class="mut">ChatGPT · Nano Banana · Kling · Video Editing Tools</dd></div>
+     </dl>
+    </div>
+   </article>
+
+   <article class="proj">
+    <div class="frame rv" data-file="images/work-03.jpg"><img src="images/work-03.jpg" alt="BASED Hair Clay AI UGC ad, vertical campaign frame" loading="lazy"><button class="play" type="button" data-src="https://drive.google.com/file/d/1_NXyraJbG3LG4mhbJOBAtvXUeTA19fEZ/preview" data-title="BASED Hair Clay AI UGC ad video"><i aria-hidden="true"></i>Play ad<span class="sr">: BASED Hair Clay AI UGC ad</span></button></div>
+    <div class="rv">
+     <p class="meta"><span class="lbl">03 / 03</span><span class="lbl">Self-Directed AI Production Study</span></p>
+     <h3>BASED Hair Clay</h3>
+     <dl>
+      <div class="row"><dt>Challenge</dt><dd>Keep the same man, hairstyle, and BASED Clay jar consistent across bathroom, hallway, and café scenes in a single UGC-style ad, without identity drift, product changes, or mismatched environments.</dd></div>
+      <div class="row"><dt>Approach</dt><dd>I locked the character, hair, wardrobe, and product as fixed references, then planned each location and camera angle in advance so only the intended scene, outfit, or camera angle changed.</dd></div>
+      <div class="row"><dt>What It Demonstrates</dt><dd>Character consistency, product continuity, believable UGC delivery, and strict prompt discipline.</dd></div>
+      <div class="row"><dt>Tools</dt><dd class="mut">ChatGPT · Nano Banana · Kling</dd></div>
+     </dl>
+    </div>
+   </article>
+  </div>
+ </section>
+
+ <section id="services" class="alt" aria-labelledby="h-svc">
+  <div class="w">
+   <h2 id="h-svc">Services</h2>
+   <ol>
+    <li class="svc rv"><span class="n">01</span><h3>AI UGC &amp; Performance Ad Production</h3><div><p><b>What It Is</b>Realistic AI-powered video ads built around your product, offer, audience, script, references, and creative direction.</p><p><b>What You Receive</b>Finished short-form creative combining AI UGC, product visuals, B-roll, captions, motion, and direct-response editing for paid-social use and creative testing.</p></div></li>
+    <li class="svc rv"><span class="n">02</span><h3>VSL &amp; Direct-Response Editing</h3><div><p><b>What It Is</b>Structured editing for scripts, voiceovers, raw footage, AI visuals, product demonstrations, and supporting B-roll.</p><p><b>What You Receive</b>A finished VSL or short-form ad shaped around hooks, retention, clarity, pacing, product communication, persuasion, and CTA.</p></div></li>
+    <li class="svc rv"><span class="n">03</span><h3>AI Product Visuals &amp; B-Roll</h3><div><p><b>What It Is</b>Believable product demonstrations, supporting footage, transformation sequences, visual explainers, and 3D-style scenes built around the script.</p><p><b>What You Receive</b>Consistent product-focused visuals designed to support specific ad beats without relying on random or disconnected AI footage.</p></div></li>
+    <li class="svc rv"><span class="n">04</span><h3>Storyboarding &amp; Visual Systems</h3><div><p><b>What It Is</b>Scene-by-scene planning that defines characters, products, wardrobe, environments, framing, lighting, camera direction, and prompt logic before production.</p><p><b>What You Receive</b>A controlled production system that reduces visual drift and keeps characters, products, and scenes consistent across the creative.</p></div></li>
+   </ol>
+  </div>
+ </section>
+
+ <section id="process" aria-labelledby="h-proc">
+  <div class="w">
+   <h2 id="h-proc">Process</h2>
+   <ol class="steps">
+    <li class="rv"><span class="n">01</span><h3>Deconstruct</h3><p>I study your product, offer, audience, script, references, existing footage, and deliverables before production begins.</p></li>
+    <li class="rv"><span class="n">02</span><h3>Build the System</h3><p>I map the visual beats and define the product, character, wardrobe, environment, framing, and camera rules before generating.</p></li>
+    <li class="rv"><span class="n">03</span><h3>Produce &amp; Edit</h3><p>I create and select the strongest visuals, then combine AI footage, real footage, B-roll, motion, captions, and direct-response editing.</p></li>
+    <li class="rv"><span class="n">04</span><h3>QA &amp; Deliver</h3><p>I review realism, product accuracy, continuity, pacing, script alignment, artifacts, captions, sound, and export quality before delivery.</p></li>
+   </ol>
+  </div>
+ </section>
+
+ <section id="standards" class="alt" aria-labelledby="h-std">
+  <div class="w">
+   <h2 id="h-std">Working Standards</h2>
+   <ul class="std">
+    <li class="rv"><h3>Realism Over AI Spectacle</h3><p>If the creative needs to feel native, I prioritize believable people, products, environments, gestures, and camera behavior over unnecessary polish.</p></li>
+    <li class="rv"><h3>Visuals Follow the Script</h3><p>Every shot should help communicate the problem, product, mechanism, proof, offer, or reason to keep watching.</p></li>
+    <li class="rv"><h3>Continuity Is Controlled</h3><p>Products, characters, wardrobe, framing, lighting, and environments are treated as production constraints, not left to chance.</p></li>
+    <li class="rv"><h3>Editing Finishes the Ad</h3><p>Generation creates assets. Editing controls pacing, structure, captions, sound, emphasis, and how the message lands.</p></li>
+   </ul>
+  </div>
+ </section>
+
+ <section id="about" class="about" aria-labelledby="h-about">
+  <div class="w" id="ab">
+   <h2 id="h-about">About</h2>
+   <p>I’m Jay Laurence Adim, an AI Video Specialist focused on DTC and e-commerce advertising.</p>
+   <p>I use AI as part of a controlled production process, not as a substitute for creative judgment. That means planning the visuals around the script, protecting product and character consistency, and combining generated assets with direct-response editing.</p>
+   <p>The goal is simple: believable video creative that communicates the product clearly, fits the brand, and is useful for paid-social testing and iteration.</p>
+  </div>
+ </section>
+
+ <section id="contact" class="contact alt" aria-labelledby="h-contact">
+  <div class="w">
+   <h2 id="h-contact">Need Better Video Creative for Your Next Campaign?</h2>
+   <p>Send over your product, script, brief, references, or existing footage. I’ll review the project and the best way to approach the creative.</p>
+   <a class="btn" href="mailto:jaylaurenceadim@gmail.com">Start a Project</a>
+   <a class="mail" href="mailto:jaylaurenceadim@gmail.com">jaylaurenceadim@gmail.com</a>
+   <a class="wa" href="https://wa.me/639300227209" target="_blank" rel="noopener noreferrer">WhatsApp · +63 930 022 7209</a>
+   <div class="links">
+    <a href="https://www.linkedin.com/in/jay-laurence-adim-a84910316" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://v2.onlinejobs.ph/jobseekers/info/4006206" target="_blank" rel="noopener noreferrer">OnlineJobs.ph</a>
+    <a href="https://www.facebook.com/laurence.regis.7" target="_blank" rel="noopener noreferrer">Facebook</a>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer>
+ <div class="w">
+  <span>Jay Laurence Adim · AI Video Specialist</span>
+  <div>
+   <a href="https://www.linkedin.com/in/jay-laurence-adim-a84910316" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+   <a href="https://v2.onlinejobs.ph/jobseekers/info/4006206" target="_blank" rel="noopener noreferrer">OnlineJobs.ph</a>
+   <a href="https://www.facebook.com/laurence.regis.7" target="_blank" rel="noopener noreferrer">Facebook</a>
+  </div>
+ </div>
+</footer>
+
+<script>
+(function(){
+ // Placeholders: hide label when an image loads, remove image if it is missing
+ document.querySelectorAll('.frame').forEach(function(f){
+  var i=f.querySelector('img');if(!i)return;
+  var ok=function(){f.classList.add('ok')},bad=function(){i.remove()};
+  if(i.complete){i.naturalWidth?ok():bad()}
+  else{i.addEventListener('load',ok);i.addEventListener('error',bad)}
+ });
+ // Optional profile photo: shown only if images/profile.jpg exists
+ var p=new Image();p.alt='Portrait of Jay Laurence Adim';p.className='pf';p.width=140;p.height=140;p.loading='lazy';
+ p.onload=function(){var a=document.getElementById('ab');a.insertBefore(p,a.children[1])};
+ p.src='images/profile.jpg';
+ // Click-to-play Drive videos (loads the player only on tap)
+ document.querySelectorAll('.play').forEach(function(b){b.addEventListener('click',function(){
+  var f=b.parentNode,v=document.createElement('iframe');
+  v.src=b.dataset.src;v.title=b.dataset.title;v.loading='lazy';v.allow='autoplay; fullscreen';v.allowFullscreen=true;
+  f.appendChild(v);b.remove();v.focus();
+ })});
+ if(!('IntersectionObserver' in window))return;
+ // Reveals
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+ document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+ // Active nav state
+ var links=document.querySelectorAll('.nav ul a');
+ var so=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){links.forEach(function(l){l.getAttribute('href')==='#'+e.target.id?l.setAttribute('aria-current','true'):l.removeAttribute('aria-current')})}
+ })},{rootMargin:'-40% 0px -55% 0px'});
+ ['work','services','process','about','contact'].forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
+})();
+</script>
+</body>
+</html>
